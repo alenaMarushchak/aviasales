@@ -1,0 +1,372 @@
+html, body,
+div, span,
+applet, object,
+iframe, h1,
+h2, h3,
+h4, h5,
+h6, p,
+blockquote, pre,
+a, abbr,
+acronym, address,
+big, cite,
+code, del,
+dfn, em,
+img, ins,
+kbd, q, s,
+samp, small,
+strike, strong,
+sub, sup,
+tt, var,
+b, u, i,
+center, dl,
+dt, dd,
+ol, ul, li,
+fieldset, form,
+label, legend,
+table, caption,
+tbody, tfoot,
+thead, tr,
+th, td, article,
+aside, canvas,
+details, embed,
+figure, figcaption,
+footer, header,
+hgroup, menu,
+nav, output,
+ruby, section,
+summary, time,
+mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5; }
+
+body {
+  font-family: Open Sans, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif; }
+
+.bold {
+  font-weight: 700; }
+
+* {
+  box-sizing: border-box; }
+  *:before, *:after {
+    box-sizing: border-box; }
+
+body {
+  background: #f3f7fa;
+  color: #4d4d4d; }
+
+a {
+  background-color: transparent;
+  color: #4d4d4d; }
+  a:hover, a:focus, a:active {
+    color: #343434;
+    outline: 0; }
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+
+.flex {
+  display: flex; }
+  .flex.centered {
+    justify-content: center; }
+
+.filter-container {
+  display: inline-block;
+  padding: 2%;
+  margin: 1%;
+  border: 1px solid #e5fbf3;
+  border-radius: 5%;
+  background-color: #ffffff;
+  height: 40%;
+  width: 20%;
+  text-transform: uppercase; }
+  .filter-container .currency-container {
+    margin-bottom: 15%; }
+    .filter-container .currency-container h3 {
+      color: #626262;
+      font-size: 0.9em;
+      font-weight: 600;
+      margin-bottom: 5%; }
+    .filter-container .currency-container .currency-btn {
+      position: relative;
+      display: inline-block;
+      margin: 0;
+      padding: 5px 16px;
+      height: 40px;
+      width: 80px;
+      line-height: 1;
+      background-color: #ffffff;
+      border: 1px solid #e1e3e4;
+      color: #2194f0;
+      font-weight: 600;
+      font-family: Open Sans, sans-serif;
+      font-size: 12px;
+      white-space: nowrap;
+      cursor: pointer;
+      outline: none 0;
+      vertical-align: middle; }
+      .filter-container .currency-container .currency-btn.active {
+        background-color: #2194f0;
+        color: #ffffff;
+        border: 0; }
+        .filter-container .currency-container .currency-btn.active:hover {
+          background-color: #2194f0;
+          border: 0;
+          color: #ffffff; }
+      .filter-container .currency-container .currency-btn:hover {
+        background-color: #f2fcff;
+        border: 1px solid #70bbf6; }
+      .filter-container .currency-container .currency-btn:first-of-type {
+        border-radius: 5px 0 0 5px;
+        border-right: 0; }
+        .filter-container .currency-container .currency-btn:first-of-type:hover {
+          border-right: 1px solid #70bbf6; }
+      .filter-container .currency-container .currency-btn:first-of-type ~ :not(:last-of-type) {
+        border-radius: 0; }
+      .filter-container .currency-container .currency-btn:last-of-type {
+        border-radius: 0 5px 5px 0; }
+  .filter-container .stops-container {
+    margin-bottom: 2%; }
+    .filter-container .stops-container h3 {
+      color: #626262;
+      font-size: 0.9em;
+      font-weight: 600;
+      margin-bottom: 5%; }
+    .filter-container .stops-container .checkbox-inner {
+      margin-bottom: 0.5em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .filter-container .stops-container .checkbox-inner span {
+        font-size: 0.7em; }
+      .filter-container .stops-container .checkbox-inner .only {
+        display: inline-block;
+        visibility: hidden;
+        cursor: pointer; }
+      .filter-container .stops-container .checkbox-inner:hover {
+        background-color: #f1fcff; }
+        .filter-container .stops-container .checkbox-inner:hover .only {
+          color: #2194f0;
+          font-weight: 500;
+          font-family: Open Sans, sans-serif;
+          visibility: visible; }
+      .filter-container .stops-container .checkbox-inner .checkbox-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center; }
+        .filter-container .stops-container .checkbox-inner .checkbox-container .checkbox-input input[type=checkbox] + label {
+          margin: 0.2em;
+          cursor: pointer;
+          padding: 0.2em; }
+        .filter-container .stops-container .checkbox-inner .checkbox-container .checkbox-input input[type=checkbox] {
+          display: none; }
+        .filter-container .stops-container .checkbox-inner .checkbox-container .checkbox-input input[type=checkbox] + label:before {
+          content: "\2714";
+          border: 1px solid #e1e3e4;
+          border-radius: 0.2em;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          padding-left: 0.2em;
+          padding-bottom: 0.3em;
+          margin-right: 0.2em;
+          vertical-align: bottom;
+          color: transparent;
+          transition: .2s; }
+        .filter-container .stops-container .checkbox-inner .checkbox-container .checkbox-input input[type=checkbox] + label:active:before {
+          transform: scale(0); }
+        .filter-container .stops-container .checkbox-inner .checkbox-container .checkbox-input input[type=checkbox]:checked + label:before {
+          background-color: #ffffff;
+          border-color: #2194f0;
+          color: #2194f0; }
+
+.tickets-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 400px; }
+  .tickets-container .no-data {
+    background-color: #ffffff;
+    margin: 2% 0;
+    border: 1px solid #e5fbf3;
+    border-radius: 3%;
+    font-size: 2.5em; }
+
+.ticket-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 2% 0;
+  border: 1px solid #e5fbf3;
+  border-radius: 3%;
+  background-color: #ffffff; }
+  .ticket-item .short-info {
+    flex: 30%;
+    border-right: 2px solid #e5fbf3;
+    margin: 2%; }
+    .ticket-item .short-info .carrier-logo {
+      width: 90%; }
+    .ticket-item .short-info button {
+      background-color: #ff6d00;
+      color: #ffffff;
+      display: block;
+      width: 90%;
+      height: 60px;
+      font-size: 1.2em;
+      cursor: pointer;
+      border: 0;
+      border-radius: 5%;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
+  .ticket-item .long-info {
+    flex: 70%;
+    margin: 2%; }
+    .ticket-item .long-info .departure-arrival {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .ticket-item .long-info .departure-arrival .time {
+        font-size: 2.5em;
+        font-weight: 500;
+        color: #5d5d5d; }
+      .ticket-item .long-info .departure-arrival .stop-count-container {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        width: 50%; }
+        .ticket-item .long-info .departure-arrival .stop-count-container .stop-count {
+          font-size: 0.7em;
+          color: #9ea5a8;
+          display: inline-block;
+          border-bottom: 1px solid #9ea5a8;
+          text-align: center;
+          margin-bottom: 10px;
+          width: 90%; }
+      .ticket-item .long-info .departure-arrival .date {
+        color: #9ea5a8;
+        margin-top: 10px; }
+      .ticket-item .long-info .departure-arrival .label {
+        color: #5d5d5d;
+        font-weight: 600; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+#cube-loader {
+  align-items: center;
+  display: flex;
+  width: 50%; }
+  #cube-loader .caption {
+    margin: 0 auto; }
+  #cube-loader .cube-loader {
+    width: 73px;
+    height: 73px;
+    margin-top: 49px;
+    position: relative;
+    transform: rotateZ(45deg); }
+    #cube-loader .cube-loader .cube {
+      position: relative;
+      width: 50%;
+      height: 50%;
+      float: left;
+      transform: scale(1.1); }
+    #cube-loader .cube-loader .cube:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #2194f0;
+      animation: cube-loader 2.76s infinite linear both;
+      transform-origin: 100% 100%; }
+    #cube-loader .cube-loader .loader-2 {
+      transform: scale(1.1) rotateZ(90deg); }
+    #cube-loader .cube-loader .loader-3 {
+      transform: scale(1.1) rotateZ(180deg); }
+    #cube-loader .cube-loader .loader-4 {
+      transform: scale(1.1) rotateZ(270deg); }
+    #cube-loader .cube-loader .loader-2:before {
+      animation-delay: 0.35s; }
+    #cube-loader .cube-loader .loader-3:before {
+      animation-delay: 0.69s; }
+    #cube-loader .cube-loader .loader-4:before {
+      animation-delay: 1.04s; }
+
+@keyframes cube-loader {
+  0%, 10% {
+    transform: perspective(136px) rotateX(-180deg);
+    opacity: 0; }
+  25%, 75% {
+    transform: perspective(136px) rotateX(0deg);
+    opacity: 1; }
+  90%, 100% {
+    transform: perspective(136px) rotateY(180deg);
+    opacity: 0; } }
+
+header {
+  display: flex;
+  justify-content: center; }

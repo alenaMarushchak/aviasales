@@ -1,0 +1,25 @@
+$base-font-family: Open Sans, sans-serif;
+$extra-font-family:  sans-serif;
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+body {
+  font-family: $base-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $extra-font-family;
+}
+
+.bold {
+  font-weight: 700;
+}

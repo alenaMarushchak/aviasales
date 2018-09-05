@@ -1,0 +1,96 @@
+.tickets-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 400px;
+
+  .no-data{
+    background-color: #ffffff;
+    margin: 2% 0;
+    border: 1px solid #e5fbf3;
+    border-radius: 3%;
+    font-size: 2.5em;
+  }
+}
+
+.ticket-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 2% 0;
+  border: 1px solid #e5fbf3;
+  border-radius: 3%;
+  background-color: #ffffff;
+
+  .short-info {
+    flex: 30%;
+    border-right: 2px solid #e5fbf3;
+    margin: 2%;
+
+    .carrier-logo {
+      width: 90%;
+
+    }
+
+    button {
+      background-color: #ff6d00;
+      color: #ffffff;
+      display: block;
+      width: 90%;
+      height: 60px;
+      font-size: 1.2em;
+      cursor: pointer;
+      border: 0;
+      border-radius: 5%;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .long-info {
+    flex: 70%;
+    margin: 2%;
+
+    .departure-arrival {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+
+      .time {
+        font-size: 2.5em;
+        font-weight: 500;
+        color: #5d5d5d
+      }
+
+      .stop-count-container {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        width: 50%;
+
+        .stop-count {
+          font-size: 0.7em;
+          color: #9ea5a8;
+          display: inline-block;
+          border-bottom: 1px solid #9ea5a8;
+          text-align: center;
+          margin-bottom: 10px;
+          width: 90%;
+        }
+      }
+
+      .date {
+        color: #9ea5a8;
+        margin-top: 10px;
+      }
+
+      .label {
+        color: #5d5d5d;
+        font-weight: 600;
+      }
+    }
+
+  }
+}
