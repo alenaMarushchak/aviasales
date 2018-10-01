@@ -188,7 +188,7 @@ module.exports = {
               },
             ],
           },
-            {
+          {
                 test: /\.scss$/,
                 loaders: [
                     require.resolve('style-loader'),
